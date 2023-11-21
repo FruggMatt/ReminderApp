@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct ReminderAppApp: App {
+struct RimenderApp: App {
     var body: some Scene {
         WindowGroup {
+            
             ContentView()
+                .environment(\.accessibilityEnabled, true)
         }
     }
 }
