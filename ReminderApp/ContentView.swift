@@ -21,39 +21,82 @@ struct ContentView: View {
                 ScrollView(.vertical){
                     LazyVGrid(columns: Array(repeating: GridItem(), count: 2)){
                         
-            
-                          
+                        
+                        
                         
                         ForEach(forbeatchs) { beetch in
-                            GroupBox(){
-                                VStack (alignment:.leading){
-                                    HStack {Image(systemName:beetch.icon)
-                                            .font(.title)
-                                        Spacer()
-                                        Text(beetch.number)
-                                            .bold()
-                                            .font(.title)
+                            NavigationLink(destination: newHello()){ GroupBox() {
+                                    VStack (alignment:.leading, spacing: 5){
+                                        HStack {Image(systemName:beetch.icon)
+                                                .font(.title)
+                                                .symbolRenderingMode(.palette)
+                                                .foregroundStyle(beetch.color1, beetch.color2)
+                                            
+                                            Spacer()
+                                            Text(beetch.number)
+                                                .bold()
+                                                .font(.title)
+                                            
+                                            
+                                            
+                                            
+                                        }
                                         
                                         
-                                    
+                                        Text (beetch.textino)
+                                            .foregroundStyle(.gray)
+                                            .font(.subheadline)
+                                            .fontWeight(.heavy)
+                                        
+                                    }
                                 }
-                                    
-                                    Text (beetch.textino)
-                                        .foregroundStyle(.gray)
-                                }
-                            }
+                                
+                                
+                            }.buttonStyle(.plain)
+                        
+                            .padding(.leading)
+                            .padding(.top)
+                            
                             
                             
                         }
+                       
                         
                     }
-                }.scrollIndicators(.hidden)
+                    Text("My Lists")
+                        .font(.system(size: 25, weight: .heavy, design: .default))
+                        .padding(.trailing,240)
+                        .font(.title)
+                      
+                    
+                }
+                
+                .scrollIndicators(.hidden)
                     .toolbar{
                         ToolbarItem(placement: .primaryAction) {Menu("",systemImage: "ellipsis.circle") {
-                            Button("Modifica Elenchi",systemImage: "pencil", action: placeOrder)
-                            Button("Modelli",systemImage: "square.on.square", action: adjustOrder)
+                            Button("Edit Lists",systemImage: "pencil", action: {})
+                            Button("Templates",systemImage: "square.on.square", action: {})
                             
                         }
+                            
+                            
+                            
+                        }
+                    }
+                    .toolbar{
+                        ToolbarItemGroup(placement: .bottomBar)  {
+                            Button(action: {} , label: {
+                                Image(systemName: "plus.circle.fill"
+                                )
+                                Text("New Reminder")
+                            })
+                            Button(action: {} , label: {
+                                Text("Add List")
+                            })
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -74,8 +117,7 @@ struct ContentView: View {
     
     
 }
-func placeOrder() { }
-func adjustOrder() { }
+
 
 
 

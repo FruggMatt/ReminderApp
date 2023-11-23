@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		AA2085232B0CAA13000F4F60 /* Boxlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2085222B0CAA13000F4F60 /* Boxlist.swift */; };
+		AA2085272B0DF542000F4F60 /* DateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2085262B0DF542000F4F60 /* DateList.swift */; };
 		AA36ED702B04BE880065700B /* ReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36ED6F2B04BE880065700B /* ReminderApp.swift */; };
 		AA36ED722B04BE880065700B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36ED712B04BE880065700B /* ContentView.swift */; };
 		AA36ED742B04BE890065700B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA36ED732B04BE890065700B /* Assets.xcassets */; };
 		AA36ED772B04BE890065700B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA36ED762B04BE890065700B /* Preview Assets.xcassets */; };
+		AABCFC572B0E1B3200A85B75 /* newHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCFC562B0E1B3200A85B75 /* newHello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA2085222B0CAA13000F4F60 /* Boxlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxlist.swift; sourceTree = "<group>"; };
+		AA2085262B0DF542000F4F60 /* DateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateList.swift; sourceTree = "<group>"; };
 		AA36ED6C2B04BE880065700B /* ReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA36ED6F2B04BE880065700B /* ReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderApp.swift; sourceTree = "<group>"; };
 		AA36ED712B04BE880065700B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA36ED732B04BE890065700B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA36ED762B04BE890065700B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AABCFC562B0E1B3200A85B75 /* newHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newHello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				AA36ED6F2B04BE880065700B /* ReminderApp.swift */,
 				AA36ED712B04BE880065700B /* ContentView.swift */,
+				AABCFC562B0E1B3200A85B75 /* newHello.swift */,
 				AA2085222B0CAA13000F4F60 /* Boxlist.swift */,
+				AA2085262B0DF542000F4F60 /* DateList.swift */,
 				AA36ED732B04BE890065700B /* Assets.xcassets */,
 				AA36ED752B04BE890065700B /* Preview Content */,
 			);
@@ -142,6 +148,8 @@
 			files = (
 				AA2085232B0CAA13000F4F60 /* Boxlist.swift in Sources */,
 				AA36ED722B04BE880065700B /* ContentView.swift in Sources */,
+				AA2085272B0DF542000F4F60 /* DateList.swift in Sources */,
+				AABCFC572B0E1B3200A85B75 /* newHello.swift in Sources */,
 				AA36ED702B04BE880065700B /* ReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
